@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<!--
+		Mosaic - Sliding Boxes and Captions jQuery Plugin
+		Version 1.0.1
+		www.buildinternet.com/project/mosaic
+		
+		By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+		Released under MIT License / GPL License
+	-->
+
+	<head>
+
+		<title>PORTFOLIO</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		
+		<link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mosaic.1.0.1.js"></script>
+		
+		<script type="text/javascript">  
+			
+			jQuery(function($){
+				
+				$('.circle').mosaic({
+					opacity		:	0.8			//Opacity for overlay (0-1)
+				});
+				
+				$('.fade').mosaic();
+				
+				$('.bar').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar2').mosaic({
+					animation	:	'slide'		//fade or slide
+				});
+				
+				$('.bar3').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top'		//Vertical anchor position
+				});
+				
+				$('.cover').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px'		//Horizontal position on hover
+				});
+				
+				$('.cover2').mosaic({
+					animation	:	'slide',	//fade or slide
+					anchor_y	:	'top',		//Vertical anchor position
+					hover_y		:	'80px'		//Vertical position on hover
+				});
+				
+				$('.cover3').mosaic({
+					animation	:	'slide',	//fade or slide
+					hover_x		:	'400px',	//Horizontal position on hover
+					hover_y		:	'300px'		//Vertical position on hover
+				});
+		    
+		    });
+		    
+		</script>
+		
+		<style type="text/css">
+		
+			/*Demo Styles*/
+			body{ background:#e9e8e4 url('img/bg-grid.png');; }
+				#content{ width:845px; margin:20px auto; padding:10px 30px; }
+				.clearfix{ display: block; height: 0; clear: both; visibility: hidden; }
+						
+				.details{ margin:15px 20px; }	
+					h4{ font:300 16px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; text-shadow:1px 1px 0 rgb(0,0,0); }
+					p{ font:300 12px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#aaa; text-shadow:1px 1px 0 rgb(0,0,0);}
+					a{ text-decoration:none; }
+		
+		</style>
+		
+	</head>
+
+<body>
+
+	<div id="content">
+		
+		<!--Circle-->	
+		<div class="mosaic-block fade">
+			<a href="//www.esliteliving.com/" target="_blank" class="mosaic-overlay">
+                <div class="details">
+					<h4>誠品生活網</h4>
+					<p></p>
+				</div>
+            </a>
+			<div class="mosaic-backdrop"><img src="img/eslite/living.jpg"/></div>
+		</div>
+	
+		<!--Fade-->
+		<div class="mosaic-block fade">
+			<a href="//holmes2136.github.io/FSB2B/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>誠品FSB2B</h4>
+					<p></p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="img/eslite/fsb2b.jpg"/></div>
+		</div>
+		
+		<!--Bar-->
+		<div class="mosaic-block bar">
+			<a href="//www.eslitegourmet.com.tw/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>誠品食尚網</h4>
+					<p></p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="img/eslite/gourmet.jpg"/></div>
+		</div>
+		
+		<!--Bar 2-->
+		<div class="mosaic-block bar2">
+			<a href="//www.eslitewine.com/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>誠品酒窖網</h4><br/>
+					<p></p>
+				</div>
+			</a>
+			<div class="mosaic-backdrop"><img src="img/eslite/wine.jpg"/></div>
+		</div>
+		
+		<!--Bar 3-->
+		<div class="mosaic-block bar3">
+			<a href="//holmes2136.github.io/Lifeline/" target="_blank" class="mosaic-overlay">
+				<div class="details">
+					<h4>生命線基金會官網</h4>
+					<p></p>
+				</div>
+			</a>
+			<a href="//holmes2136.brinkster.net/Lifeline/index.aspx" target="_blank" class="mosaic-backdrop">
+            <img src="img/lifeline.jpg"/></a>
+		</div>
+		
+		<!--Cover-->
+		<div class="mosaic-block cover">
+			<div class="mosaic-overlay"><img src="https://dl.dropboxusercontent.com/u/23971112/website/2014-12-17_110403.jpg"/></div>
+			<a href="//holmes2136.github.io/liarAddress/" target="_blank" class="mosaic-backdrop">
+				<div class="details">
+					<h4>JQuery Plugin 地址元件</h4>
+					<p>liar address</p>
+				</div>
+			</a>
+		</div>
+		
+		<!--Cover 2-->
+		<div class="mosaic-block cover2">
+			<a href="//holmes2136.github.io/liarobject/" target="_blank" class="mosaic-overlay"><img src="https://dl.dropboxusercontent.com/u/23971112/website/2014-12-17_110709.jpg"/></a>
+			<a href="//holmes2136.github.io/liarobject/" target="_blank" class="mosaic-backdrop">
+				<div class="details">
+					<h4>JQuery Plugin API 元件</h4>
+					<p>liarobject</p>
+				</div>
+			</a>
+		</div>
+			
+		<!--Cover 3-->
+		<!--<div class="mosaic-block cover3">
+			<div class="mosaic-overlay"><img src="http://buildinternet.s3.amazonaws.com/projects/mosaic/omr-office.jpg"/></div>
+			<a href="http://officeal.com/offices/one-mighty-roar/" target="_blank" class="mosaic-backdrop">
+				<div class="details">
+					<h4>One Mighty Roar Office</h4>
+					<p>via Officeal</p>
+				</div>
+			</a>
+		</div>-->
+		
+		<div class="clearfix"></div>
+	</div>
+	
+</body>
+</html>
